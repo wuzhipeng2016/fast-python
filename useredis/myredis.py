@@ -3,7 +3,6 @@ import json
 import subprocess
 
 #redis config
-#rconfig={'ip':'172.16.7.74','port':6379,'db':1,'password':'wisedu@1234'}
 rconfig={'ip':'127.0.0.1','port':6379,'db':0,'password':'1234567'}
 
 #main function
