@@ -35,7 +35,10 @@ def getvalue(key):
 
 #connect redis
 def conn():
-    r=redis.Redis(host=rconfig['ip'],port=rconfig['port'],db=rconfig['db'],password=rconfig['password'])
+    r=redis.Redis(host=rconfig['ip'],
+            port=rconfig['port'],
+            db=rconfig['db'],
+            password=rconfig['password'])
     return r
 
 #flushdb
@@ -71,17 +74,21 @@ def writetotmp(data):
 
 #get data from file
 def getdatafromtmp():
-    p=subprocess.Popen('java -jar java2py.jar',stdout=subprocess.PIPE)
+    p=subprocess.Popen('java -jar java2py.jar',
+            stdout=subprocess.PIPE)
     d=p.stdout.read()
     return formatjson(d,'gbk')
-    #y=json.dumps(json.loads(d.decode('gbk')), indent=4,ensure_ascii=False,sort_keys=True)
-    #return y
 
 #format json
 def formatjson(data,encode=None):
     if encode==None:
-        return json.dumps(json.loads(data),indent=4,ensure_ascii=False,sort_keys=True)
-    return json.dumps(json.loads(data.decode(encode)), indent=4,ensure_ascii=False,sort_keys=True)
+        x=data
+    else:
+        x=data.decode(encode)
+    return json.dumps(json.loads(x),
+            indent=4,
+            ensure_ascii=False,
+            sort_keys=True)
 
 #keys
 def getkeys():
