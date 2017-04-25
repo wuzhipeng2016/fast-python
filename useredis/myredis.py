@@ -31,7 +31,7 @@ def getvalue(key):
             d=gethash(s[0])
             return d
         d=gethash(s[0],s[1])
-        return formatjson(d)
+        return formatjson(d.decode())
 
 #connect redis
 def conn():
