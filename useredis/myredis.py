@@ -29,7 +29,7 @@ def getvalue(key):
     if x=='hash':
         if len(s)==1:
             d=gethash(s[0])
-            return d
+            return formatjson(formathash(d))
         d=gethash(s[0],s[1])
         return formatjson(d.decode())
 
@@ -111,3 +111,9 @@ def isjson(data):
     except ValueError:  
         return False  
     return True  
+
+def formathash(data):
+    newhash={}
+    for item in data.items():
+        newhash[item[0].decode()]=item[1].decode()
+    return json.dumps(newhash)
