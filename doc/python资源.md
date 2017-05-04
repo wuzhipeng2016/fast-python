@@ -8,6 +8,10 @@ Morepath宣称其是一套“超级强大”的Python Web框架，且仅需要�
 如果大家希望拥有一套能够默认实现异步性与安全性的网络库，那么ButterflyNet绝对值得一试。其仅支持Python 3.5及更高版本，因为其使用asyncio库以实现自身功能，但能够仅利用十余行代码即设置起服务器并为其提供必要的证书与密钥。感兴趣的朋友可以点击此处查看一套聊天室示例，仅需75行代码即可实现。  
 5.Uvloop        
 凭借着“迅如闪电的Python网络”这一宣传口号，我们实在很难忽视Uvloop的存在。Uvloop属于asyncio事件循环的替代性方案，因此其既可作为全新基于asyncio应用的运行基础，亦可在现有应用中直接替代asyncio。它还获能够与Python加速机制Cython进行协作，因此其关键部分代码实际上是由C语言编写的。其缔造者声称，它“在速度上至少比Node.js、gevent以及其它任何Python异步框架快2倍”，不过大家最好实际测试以了解其具体效果。        
+
+flask资源：  
+http://www.pythondoc.com/flask-mega-tutorial/index.html  
+
 Python是目前最流行、最易学最强大的编程语言之一（学习Python的五大理由），无论你是新手还是老鸟，无论是用于机器学习还是web开发（Pinterest就是案例），Python都是一件利器。此外，Python不但人气日益高涨，而且Python程序员的薪酬行情也是水涨船高，北美Python程序员的平均年薪高达10万美元。
 对于有志学习Python的开发者来说，Python吸引人的地方不仅是有一个优秀的社区，而且还有大量的精品免费资源可用。连环创业家，Code（Love）创始人Roger Huang近日分享了11个优秀的Python学习资源，IT经理网编译如下：
 一、Python优秀书籍

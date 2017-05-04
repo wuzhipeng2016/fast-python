@@ -1,0 +1,28 @@
+wxPython教程
+https://wiki.wxpython.org/Getting%20Started
+
+windows7 python2.7
+
+1.用管理员方式打开cmd
+
+2.首先通过pip命令安装wheel 
+如果提示’pip’不是内部或外部命令，也不是可运行的程序或批处理文件
+
+①将python安装目录下的scripts目录（例如D:\Python27\Scripts）添加到系统环境变量path里，注意前加分号。再执行该命令
+
+pip install wheel
+
+②在cmd下进入到D:\Python27\Scripts目录下执行该命令
+
+pip install wheel
+3.安装whl文件
+
+①如果将D:\Python27\Scripts目录添加到path中，可以直接在whl文件所在目录用管理员打开一个cmd窗口，直接执行下面的语句。
+
+pip install python_dateutil-2.5.3-py2.py3-none-any.whl
+
+②否则的话，需要在D:\Python27\Scripts目录下用管理员打开cmd，运行pip命令，文件名应该写全路径）
+
+pip install C:\Users\xxx\Downloads\python_dateutil-2.5.3-py2.py3-none-any.whl
+因为博客贴图比较麻烦，于是我做了一个文档，可以参考下面的链接中的文档，文档比较文章只多了几张图，其他的一样。 
+http://pan.baidu.com/s/1nvjI9jN
